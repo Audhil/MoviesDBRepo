@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="hr">
+        <item quantity="one">Hour</item>
+        <item quantity="other">Hours</item>
+    </plurals>
+
+    <plurals name="min">
+        <item quantity="one">Min</item>
+        <item quantity="other">Mins</item>
+    </plurals>
+
+    <plurals name="sec">
+        <item quantity="one">Sec</item>
+        <item quantity="other">Secs</item>
+    </plurals>
+</resources>

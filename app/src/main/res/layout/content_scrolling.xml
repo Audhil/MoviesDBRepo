@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="movie_entity"
+            type="com.medium.audhil.demoapp.data.model.db.MoviesEntity" />
+    </data>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:fillViewport="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:showIn="@layout/activity_scrolling">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/overview"
+                android:textSize="@dimen/text_size_18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="5dp"
+                android:text="@{movie_entity.overview ?? @string/no_data_to_show}"
+                android:textSize="@dimen/text_size_14sp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/title"
+                android:textSize="@dimen/text_size_18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="5dp"
+                android:text="@{movie_entity.title ?? @string/no_data_to_show}"
+                android:textSize="@dimen/text_size_14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/original_title"
+                android:textSize="@dimen/text_size_18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="5dp"
+                android:text="@{movie_entity.originalTitle ?? @string/no_data_to_show}"
+                android:textSize="@dimen/text_size_14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/original_language"
+                android:textSize="@dimen/text_size_18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="5dp"
+                android:text="@{movie_entity.originalLanguage ?? @string/no_data_to_show}"
+                android:textSize="@dimen/text_size_14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/vote_count"
+                android:textSize="@dimen/text_size_18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="5dp"
+                android:text="@{``+movie_entity.voteCount ?? @string/no_data_to_show}"
+                android:textSize="@dimen/text_size_14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/release_date"
+                android:textSize="@dimen/text_size_18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="5dp"
+                android:text="@{movie_entity.releaseDate ?? @string/no_data_to_show}"
+                android:textSize="@dimen/text_size_14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/back_drop_path"
+                android:textSize="@dimen/text_size_18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="5dp"
+                android:text="@{movie_entity.backdropPath ?? @string/no_data_to_show}"
+                android:textSize="@dimen/text_size_14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/poster_path"
+                android:textSize="@dimen/text_size_18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="5dp"
+                android:text="@{movie_entity.posterPath ?? @string/no_data_to_show}"
+                android:textSize="@dimen/text_size_14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/video"
+                android:textSize="@dimen/text_size_18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="5dp"
+                android:text="@{``+movie_entity.video ?? @string/no_data_to_show}"
+                android:textSize="@dimen/text_size_14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/popularity"
+                android:textSize="@dimen/text_size_18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="5dp"
+                android:text="@{``+movie_entity.popularity ?? @string/no_data_to_show}"
+                android:textSize="@dimen/text_size_14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/is_adult"
+                android:textSize="@dimen/text_size_18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="5dp"
+                android:text="@{movie_entity.adult ? @string/yes:@string/no}"
+                android:textSize="@dimen/text_size_14sp" />
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+</layout>

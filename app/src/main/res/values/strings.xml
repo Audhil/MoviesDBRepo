@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MovieDBApp</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="action_search">Search</string>
+
+    <string name="search_hint">Movie Name</string>
+
+    <string name="no_data_to_show">No data to show.</string>
+
+    <string name="s_mohammed_audhil">S Mohammed Audhil</string>
+
+    <string name="audhil_mail_id">smdaudhilbe@gmail.com</string>
+
+    <!--Navigation drawer texts-->
+    <string name="nav_home">Home</string>
+    <string name="nav_assignments">Assignments</string>
+    <string name="nav_timesheets">TimeSheets</string>
+    <string name="nav_settings">Settings</string>
+    <string name="nav_grid">Grid Screen</string>
+    <string name="nav_staggered_grid">Staggered Grid Screen</string>
+    <string name="nav_linear">Linear Screen</string>
+
+    <!--dialogs texts-->
+    <string name="loading">Loading\u2026</string>
+    <string name="wait_a_while">Wait a while\u2026</string>
+
+    <!--HomeFrag-->
+    <string name="today">Today</string>
+    <string name="next_schedule">Next Schedule</string>
+    <string name="non_invoiced_time_sheets">Non Invoiced Time Sheets</string>
+
+    <!--APIs-->
+    <string name="app_name_version_device_android_version" formatted="false">%s %s - %s, %s</string>
+    <string name="android">Android</string>
+
+
+    <string name="title_activity_scrolling">ScrollingActivity</string>
+
+    <string name="no_results">No results</string>
+
+
+    <!--Internet texts-->
+    <string name="internet_connected">Internet connected</string>
+    <string name="internet_not_connected">No internet connection</string>
+
+    <!--Accessibility txts-->
+    <string name="expanded_image">expanded_image</string>
+    <string name="movie_poster">movie poster</string>
+    <string name="user_image">user image</string>
+    <string name="user_email_id">user email id</string>
+
+    <string name="retry">Retry</string>
+
+    <!--Scrolling activity-->
+    <string name="overview">Overview</string>
+    <string name="title">Title</string>
+    <string name="original_title">Original Title</string>
+    <string name="original_language">Original Language</string>
+    <string name="release_date">Release Date</string>
+    <string name="back_drop_path">Back Drop path</string>
+    <string name="vote_count">Vote Count</string>
+    <string name="poster_path">Poster Path</string>
+    <string name="video">Video</string>
+    <string name="popularity">Popularity</string>
+    <string name="is_adult">Is Adult?</string>
+
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <string name="search_by_name_or_year">Search by name or year</string>
+</resources>
