@@ -22,4 +22,4 @@ This is just a demo app exploring MoviesDB API, it involves,
 5. Endless scroll(Infinite scroll) recycler view
 6. Internet listener
 
-Sample APK : https://drive.google.com/open?id=1YH8ah64bTxfdHie7y-ocLqktAFXnppbW
+Sample APK : https://drive.google.com/open?id=1Nd1yrhHWvtcx_D32apmGjJ7St3WDt48Q
