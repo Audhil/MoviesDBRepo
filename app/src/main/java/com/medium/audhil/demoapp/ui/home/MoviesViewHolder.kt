@@ -6,11 +6,12 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
-import com.bumptech.glide.Glide
+import com.bumptech.glide.load.engine.DiskCacheStrategy
 import com.bumptech.glide.request.RequestOptions
 import com.medium.audhil.demoapp.R
 import com.medium.audhil.demoapp.data.model.db.MoviesEntity
 import com.medium.audhil.demoapp.data.remote.MovieDBAppAPIEndPoints
+import com.medium.audhil.demoapp.glide.GlideApp
 import com.medium.audhil.demoapp.util.Callback
 
 /*
@@ -31,9 +32,10 @@ class MoviesViewHolder(
     fun bindTo(pos: Int, movieEntity: MoviesEntity?, clickListener: Callback<Int>?) {
         this.clickListener = clickListener
         timeSheetNameTxtView.text = movieEntity?.title
-        Glide.with(itemView.context)
+        GlideApp.with(itemView.context)
                 .load(MovieDBAppAPIEndPoints.IMAGE_END_POINT_W_500 +
                         movieEntity?.posterPath)
+                .diskCacheStrategy(DiskCacheStrategy.ALL)
                 .apply(RequestOptions().placeholder(R.mipmap.ic_launcher).error(R.mipmap.ic_launcher_round))
                 .into(thumbnail)
         baseCardView.setOnClickListener {

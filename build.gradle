@@ -39,7 +39,8 @@ ext {
 
     dagger2Version = '2.14.1'
 
-    glideVersion = '4.5.0'
+//    glideVersion = '4.5.0'
+    glideVersion = '4.7.1'
 }
 
 allprojects {

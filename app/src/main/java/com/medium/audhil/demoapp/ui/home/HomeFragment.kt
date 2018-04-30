@@ -30,8 +30,10 @@ import android.view.MenuItem
 
 class HomeFragment : BaseLifeCycleFragment<HomeFragBinding, HomeViewModel>() {
 
-    override fun internetAvailable() =
-            getString(R.string.internet_connected).showToast()
+    override fun internetAvailable() {
+        getString(R.string.internet_connected).showToast()
+        refreshListener.onRefresh()
+    }
 
     override fun internetUnAvailable() =
             getString(R.string.internet_not_connected).showToast()

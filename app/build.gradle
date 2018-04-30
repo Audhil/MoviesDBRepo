@@ -78,16 +78,19 @@ dependencies {
             'android.arch.persistence.room:rxjava2:' + rootProject.archRoomVersion,
 
             //  dagger 2
-            'com.google.dagger:dagger:' + rootProject.dagger2Version,
+            'com.google.dagger:dagger:' + rootProject.dagger2Version
 
-            //  glide
-            'com.github.bumptech.glide:glide:' + rootProject.glideVersion
+    //  glide
+    implementation('com.github.bumptech.glide:glide:' + rootProject.glideVersion) {
+        exclude group: "com.android.support"
+    }
 
 
     kapt 'android.arch.lifecycle:compiler:' + rootProject.archLifecycleVersion,
             'android.arch.persistence.room:compiler:' + rootProject.archRoomVersion,
             'com.android.databinding:compiler:' + rootProject.dataBindingCompilerVersion,
-            'com.google.dagger:dagger-compiler:' + rootProject.dagger2Version
+            'com.google.dagger:dagger-compiler:' + rootProject.dagger2Version,
+            'com.github.bumptech.glide:compiler:' + rootProject.glideVersion
 
     //  test case deps
     testImplementation 'junit:junit:' + rootProject.jUnitVersion
